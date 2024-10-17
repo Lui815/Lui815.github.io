@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Moda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .categoria {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .categoria div {
+            width: 48%;
+            text-align: center;
+        }
+
+        .categoria img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .producto {
+            width: 30%;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .accesorios {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .accesorio {
+            width: 30%;
+            text-align: center;
+        }
+
+        .accesorio img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            background-color: #e0e0e0;
+        }
+
+        .contacto-formulario {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .contacto-formulario input, 
+        .contacto-formulario textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        .contacto-formulario button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Moda</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nuevas-llegadas.html">Nuevas LLegadas</a></li>
+                <li><a href="hombre.html">HOMBRE</a></li>
+                <li><a href="mujer.html">MUJER</a></li>
+                <li><a href="accesorios.html">ACCESORIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Bienvenidos a la Tienda de Moda</h2>
+            <p>Descubre las últimas tendencias en ropa y accesorios.</p>
+            <div class="categoria">
+                <div>
+                    <img src="img/ModaHombre.jpg" alt="Imagen de ropa 1">
+                    <p>Moda Hombre</p>
+                </div>
+                <div>
+                    <img src="img/ModaMujer.jpg" alt="Imagen de ropa 2" >
+                    <p>Moda Mujer</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nuevas Llegadas</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/Camisacasual.jpg" alt="Producto 1">
+                    <p>Camisa Casual - $120,000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="img/ChaquetaCuero.jpg" alt="Producto 2">
+                    <p>Chaqueta de Cuero - $350,000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="img/FaldaElegante.jpg" alt="Producto 3">
+                    <p>Falda Elegante - $195,000 COP</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Moda Hombre</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/jeanSlim.jpg" alt="Producto 4">
+                    <p>Jean Slim Fit - $150,000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="img/CamisaFormal.jpg" alt="Producto 5">
+                    <p>Camisa Formal - $130,000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="img/SueterLana.jpg" alt="Producto 6">
+                    <p>Suéter de Lana - $200,000 COP</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Moda Mujer</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/VestidoVerano.jpg" alt="Producto 7">
+                    <p>Vestido de Verano - $220,000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="img/AbrigoLargo.jpg" alt="Producto 8">
+                    <p>Abrigo Largo - $390,000 COP</p>
+                </div>
+                <div class="producto">
+                    <img src="img/BlusaSeda.jpg" alt="Producto 9">
+                    <p>Blusa de Seda - $120,000 COP</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Accesorios</h2>
+            <div class="accesorios">
+                <div class="accesorio">
+                    <img src="img/GafasSol.jpg" alt="Accesorio 1">
+                    <p>Gafas de Sol - $80,000 COP</p>
+                </div>
+                <div class="accesorio">
+                    <img src="img/relojPulsera.jpg" alt="Accesorio 2">
+                    <p>Reloj de Pulsera - $530,000 COP</p>
+                </div>
+                <div class="accesorio">
+                    <img src="img/BolsoMano.jpg" alt="Accesorio 3">
+                    <p>Bolso de Mano - $320,000 COP</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <div class="contacto-formulario">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo Electrónico">
+                <textarea placeholder="MENSAJE" rows="5"></textarea>
+                <button>Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Moda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
